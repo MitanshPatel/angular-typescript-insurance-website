@@ -1,0 +1,17 @@
+<div class=" flex items-center justify-center mt-4 mb-8 px-6 pb-8">
+  <div class="container mx-auto text-center">
+    <h3 class="text-primary text-xl uppercase font-semibold mb-2">Our Features</h3>
+    <h1 class="text-3xl lg:text-5xl font-bold text-gray-800 mb-12">Better Digital Insurance Begins Right Here</h1>
+
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <ng-container *ngFor="let card of cards">
+        <app-card 
+          [imgSrc]="card.imgSrc" 
+          [imgAlt]="card.imgAlt" 
+          [title]="card.title" 
+          [description]="card.description">
+        </app-card>
+      </ng-container>
+    </div>
+  </div>
+</div>
